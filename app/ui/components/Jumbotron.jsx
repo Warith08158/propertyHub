@@ -20,9 +20,11 @@ export default function Jumbotron() {
               <div className="py-4 px-6">Rent</div>
             </div>
           </div>
-          <div className="bg-white py-4 px-6 flex-col hidden w-full items-left gap-2 md:gap-0 md:flex md:flex-row md:items-center md:justify-between list-none max-w-3xl text-base">
+          <ul className="bg-white py-4 px-6 flex-col hidden w-full items-left gap-2 md:gap-0 md:flex md:flex-row md:items-center md:justify-between list-none max-w-3xl text-base">
             {/* dropdown */}
-            <DropDown />
+            <li className="flex gap-2 items-center">
+              <DropDown />
+            </li>
             {/* 2 */}
             <li className="flex gap-2 items-center">
               <span>Property Type</span>
@@ -68,7 +70,7 @@ export default function Jumbotron() {
                 Search
               </button>
             </li>
-          </div>
+          </ul>
         </div>
       </div>
     </section>
